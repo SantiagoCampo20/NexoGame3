@@ -5,8 +5,8 @@ const feed = document.querySelector('.contenedor-galery');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 
-const token = 'IGQWRQY3pFWGZAMc1ZATUTc1TFYtbmJ4TmMzcTZABMFU4V0RiT0xRQzZAFb2ctVDA0bEhDMjlfOGRPbFNFMnFQRExxcm1qMW1yazA1bVhwV09xVmtMd0xMcjRIRXF1RktFZAm5falRyLTFFZA2NDUFdoU3E0YUNteUVYd2cZD'
-const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink&limit=80&access_token=IGQWRQY3pFWGZAMc1ZATUTc1TFYtbmJ4TmMzcTZABMFU4V0RiT0xRQzZAFb2ctVDA0bEhDMjlfOGRPbFNFMnFQRExxcm1qMW1yazA1bVhwV09xVmtMd0xMcjRIRXF1RktFZAm5falRyLTFFZA2NDUFdoU3E0YUNteUVYd2cZD`;
+const token = 'IGQWRQUzQ1RTdnX19XZADdnUzkzakZAUMXZAsUlM1SXhkOVlHRmdsbG9TSElXNVJUN1NXdXhwVGxsYmd6TWctYTBOaXBYd0ViZAHBLR0RIYmpUOVRydEw2ZATc0QjZAaQm9LTHo4azB6ZAWpRbkxRRXp3eU9wVlpocGRxNnMZD'
+const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink&limit=80&access_token=${token}`;
 
 fetch(url)
 .then(res => res.json())
